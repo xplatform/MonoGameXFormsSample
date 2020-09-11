@@ -7,9 +7,9 @@
              mc:Ignorable="d"
              x:Class="MonoGameXFormsSample.MainPage">
 
-    <RelativeLayout>
-        <local:MonoGameView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
-                            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+    <StackLayout>
+        <local:MonoGameView x:Name="gameView1" HeightRequest="300" />
+        <local:MonoGameView x:Name="gameView2" HeightRequest="300" />
         <StackLayout InputTransparent="True" CascadeInputTransparent="False"
                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
@@ -32,6 +32,6 @@
                     HorizontalOptions="Start"
                     Clicked="Button_Clicked"/>
         </StackLayout>
-    </RelativeLayout>
+    </StackLayout>
 
 </ContentPage>

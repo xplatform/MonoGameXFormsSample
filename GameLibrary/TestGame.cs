@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace GameLibrary
 {
+    public class TestGame2 : TestGame
+    { }
+
     public class TestGame : Game
     {
         GraphicsDeviceManager graphics;
